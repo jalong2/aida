@@ -73,24 +73,24 @@ def main():
 #######  FUNCTION: ParseCommandLine()  #######
 ####
 def ParseCommandLine():
-    try:
+   # try:
 
-        (opts, args) = getopt.getopt(sys.argv[1:],
-                "S:i:h:k:y:r:d:n:p:3f:b:a:s:L:T:O:H:l:t:v:u",
-                ["info=", "terms=", "mem=", "guess=", "clean=", "backper=", 
-                 "nsig=", "psfthresh=", "otfthresh=", "fill=", "vfloor=",
-                 "vrad=", "originpsf=", "deriv=", "lapl=", "fullft=", "objtol=",
-                 "psftol=", "pcgiterarr=", "objiterarr=", "psfiterarr=", 
-                 "maxiter=", "maxseqstops=", "maxupobj=", "maxuppsf=", 
-                 "fracconverge=", "objccgtol=", "psfccgtol=", "objccgiter=", 
-                 "psfccgiter=", "ccgxmin=", "ccgivec=", "lgrid=", "tgrid=", 
-                 "debug"]) # seb 20090714
+    #    (opts, args) = getopt.getopt(sys.argv[1:],
+     #           "S:i:h:k:y:r:d:n:p:3f:b:a:s:L:T:O:H:l:t:v:u",
+      #          ["info=", "terms=", "mem=", "guess=", "clean=", "backper=", 
+       #          "nsig=", "psfthresh=", "otfthresh=", "fill=", "vfloor=",
+        #         "vrad=", "originpsf=", "deriv=", "lapl=", "fullft=", "objtol=",
+         #        "psftol=", "pcgiterarr=", "objiterarr=", "psfiterarr=", 
+          #       "maxiter=", "maxseqstops=", "maxupobj=", "maxuppsf=", 
+           #      "fracconverge=", "objccgtol=", "psfccgtol=", "objccgiter=", 
+            #     "psfccgiter=", "ccgxmin=", "ccgivec=", "lgrid=", "tgrid=", 
+             #    "debug"]) # seb 20090714
                 ### functionality of a number of these short and long options
                 ### still (as of 2007/03) need to be tested
-    except getopt.GetoptError:
+    #except getopt.GetoptError:
 
-        usage()
-        sys.exit(2)
+     #   usage()
+      #  sys.exit(2)
 
 
     for (opt, arg) in opts:
